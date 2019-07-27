@@ -1,0 +1,13 @@
+C:\Users\Jullie\Documents\Visual Studio 2015\Projects\PUP Inventory Management System\PUP Inventory Management System\bin\Debug\PUP Inventory Management System.exe.config
+C:\Users\Jullie\Documents\Visual Studio 2015\Projects\PUP Inventory Management System\PUP Inventory Management System\bin\Debug\PUP Inventory Management System.exe
+C:\Users\Jullie\Documents\Visual Studio 2015\Projects\PUP Inventory Management System\PUP Inventory Management System\bin\Debug\PUP Inventory Management System.pdb
+C:\Users\Jullie\Documents\Visual Studio 2015\Projects\PUP Inventory Management System\PUP Inventory Management System\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\Jullie\Documents\Visual Studio 2015\Projects\PUP Inventory Management System\PUP Inventory Management System\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Jullie\Documents\Visual Studio 2015\Projects\PUP Inventory Management System\PUP Inventory Management System\obj\Debug\PUP_Inventory_Management_System.UC_StockMonitoring.resources
+C:\Users\Jullie\Documents\Visual Studio 2015\Projects\PUP Inventory Management System\PUP Inventory Management System\obj\Debug\PUP_Inventory_Management_System.UI.DASHBOARD.resources
+C:\Users\Jullie\Documents\Visual Studio 2015\Projects\PUP Inventory Management System\PUP Inventory Management System\obj\Debug\PUP_Inventory_Management_System.LOG_IN.resources
+C:\Users\Jullie\Documents\Visual Studio 2015\Projects\PUP Inventory Management System\PUP Inventory Management System\obj\Debug\PUP_Inventory_Management_System.Properties.Resources.resources
+C:\Users\Jullie\Documents\Visual Studio 2015\Projects\PUP Inventory Management System\PUP Inventory Management System\obj\Debug\PUP Inventory Management System.csproj.GenerateResource.Cache
+C:\Users\Jullie\Documents\Visual Studio 2015\Projects\PUP Inventory Management System\PUP Inventory Management System\obj\Debug\PUP Inventory Management System.exe
+C:\Users\Jullie\Documents\Visual Studio 2015\Projects\PUP Inventory Management System\PUP Inventory Management System\obj\Debug\PUP Inventory Management System.pdb
+C:\Users\Jullie\Documents\Visual Studio 2015\Projects\PUP Inventory Management System\PUP Inventory Management System\obj\Debug\PUP Inventory Management System.csprojResolveAssemblyReference.cache
