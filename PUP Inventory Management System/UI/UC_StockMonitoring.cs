@@ -7,11 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace PUP_Inventory_Management_System
 {
     public partial class UC_StockMonitoring : UserControl
     {
+        static string connstring = ConfigurationManager.ConnectionStrings["PUP_Inventory_Management_System.Properties.Settings.Setting"].ConnectionString;
+        SqlConnection conn = new SqlConnection(connstring);
+
         public UC_StockMonitoring()
         {
             InitializeComponent();
@@ -19,12 +24,12 @@ namespace PUP_Inventory_Management_System
 
         private void button_Equipment_Click(object sender, EventArgs e)
         {
-            panel_Equipment.BringToFront();
+            panelEquipment.BringToFront();
         }
 
         private void button_Supplies_Click(object sender, EventArgs e)
         {
-            panel_Supplies.BringToFront();
+            panelSupplies.BringToFront();
         }
 
         private void rectangleShape13_Click(object sender, EventArgs e)
@@ -54,7 +59,12 @@ namespace PUP_Inventory_Management_System
 
         private void button3_Click(object sender, EventArgs e)
         {
-            textBox_Brand.Text = "Test";
+           
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

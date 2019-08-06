@@ -18,8 +18,6 @@ namespace PUP_Inventory_Management_System
         LoginBLL z = new LoginBLL();
         LoginDAL dal = new LoginDAL();
 
-        static string connstring = ConfigurationManager.ConnectionStrings["PUP_Inventory_Management_System.Properties.Settings.Setting"].ConnectionString;
-        SqlConnection conn = new SqlConnection(connstring);
         public LOG_IN()
         {
             InitializeComponent();
@@ -34,15 +32,15 @@ namespace PUP_Inventory_Management_System
         public static string LoggedUserID;
         private void Validate_Login()
         {
-            z.employee_number = textBox_EmployeeNumber.Text;
-            z.username = textBox_Username.Text;
-            z.password = textBox_Password.Text;
+            z.employee_number = textBoxEmployeeNumber.Text;
+            z.username = textBoxUsername.Text;
+            z.password = textBoxPassword.Text;
 
             bool success = dal.logCheck(z);
             if (success == true)
             {
-                LoggedUser = textBox_Username.Text;
-                LoggedUserID = textBox_EmployeeNumber.Text;
+                LoggedUser = textBoxUsername.Text;
+                LoggedUserID = textBoxEmployeeNumber.Text;
 
                 this.Visible = false;
 
@@ -54,101 +52,101 @@ namespace PUP_Inventory_Management_System
                 MessageBox.Show("Please check your login details then try again.", "Log In Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
-        private void button_Login_Click(object sender, EventArgs e)
+        private void buttonLogin_Click(object sender, EventArgs e)
         {
             Validate_Login();
         }
 
         private void textBox_EmployeeNumber_Click(object sender, EventArgs e)
         {
-            if (textBox_EmployeeNumber.Text == "")
+            if (textBoxEmployeeNumber.Text == "")
             {
-                label_employeenumber.Visible = false;
+                labelEmployeeNumber.Visible = false;
             }
-            else if (textBox_EmployeeNumber.Text.Length > 0)
+            else if (textBoxEmployeeNumber.Text.Length > 0)
             {
-                label_employeenumber.Visible = false;
-            }
-            else
-            {
-                label_employeenumber.Visible = true;
-            }
-        }
-
-        private void textBox_EmployeeNumber_Leave(object sender, EventArgs e)
-        {
-            if (textBox_EmployeeNumber.Text == "")
-            {
-                label_employeenumber.Visible = true;
-            }
-            else if (textBox_EmployeeNumber.Text.Length > 0)
-            {
-                label_employeenumber.Visible = false;
-            }
-        }
-
-        private void textBox_Username_Click(object sender, EventArgs e)
-        {
-            if (textBox_Username.Text == "")
-            {
-                label_username.Visible = false;
-            }
-            else if (textBox_Username.Text.Length > 0)
-            {
-                label_username.Visible = false;
+                labelEmployeeNumber.Visible = false;
             }
             else
             {
-                label_username.Visible = true;
+                labelEmployeeNumber.Visible = true;
             }
         }
 
-        private void textBox_Username_Leave(object sender, EventArgs e)
+        private void textBoxEmployeeNumber_Leave(object sender, EventArgs e)
         {
-            if (textBox_Username.Text == "")
+            if (textBoxEmployeeNumber.Text == "")
             {
-                label_username.Visible = true;
+                labelEmployeeNumber.Visible = true;
             }
-            else if (textBox_Username.Text.Length > 0)
+            else if (textBoxEmployeeNumber.Text.Length > 0)
             {
-                label_username.Visible = false;
+                labelEmployeeNumber.Visible = false;
             }
         }
 
-        private void textBox_Password_Click(object sender, EventArgs e)
+        private void textBoxUsername_Click(object sender, EventArgs e)
         {
-            if (textBox_Password.Text == "")
+            if (textBoxUsername.Text == "")
             {
-                label_password.Visible = false;
+                labelUsername.Visible = false;
             }
-            else if (textBox_Password.Text.Length > 0)
+            else if (textBoxUsername.Text.Length > 0)
             {
-                label_password.Visible = false;
+                labelUsername.Visible = false;
             }
             else
             {
-                label_password.Visible = true;
+                labelUsername.Visible = true;
             }
         }
 
-        private void textBox_Password_Leave(object sender, EventArgs e)
+        private void textBoxUsername_Leave(object sender, EventArgs e)
         {
-            if (textBox_Password.Text == "")
+            if (textBoxUsername.Text == "")
             {
-                label_password.Visible = true;
+                labelUsername.Visible = true;
             }
-            else if (textBox_Password.Text.Length > 0)
+            else if (textBoxUsername.Text.Length > 0)
             {
-                label_password.Visible = false;
+                labelUsername.Visible = false;
             }
         }
 
-        private void textBox_Password_TextChanged(object sender, EventArgs e)
+        private void textBoxPassword_Click(object sender, EventArgs e)
         {
-            textBox_Password.UseSystemPasswordChar = true;
+            if (textBoxPassword.Text == "")
+            {
+                labelPassword.Visible = false;
+            }
+            else if (textBoxPassword.Text.Length > 0)
+            {
+                labelPassword.Visible = false;
+            }
+            else
+            {
+                labelPassword.Visible = true;
+            }
         }
 
-        private void textBox_EmployeeNumber_KeyDown(object sender, KeyEventArgs e)
+        private void textBoxPassword_Leave(object sender, EventArgs e)
+        {
+            if (textBoxPassword.Text == "")
+            {
+                labelPassword.Visible = true;
+            }
+            else if (textBoxPassword.Text.Length > 0)
+            {
+                labelPassword.Visible = false;
+            }
+        }
+
+        private void textBoxPassword_TextChanged(object sender, EventArgs e)
+        {
+            textBoxPassword.UseSystemPasswordChar = true;
+        }
+
+        private void textBoxEmployeeNumber_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
@@ -156,7 +154,7 @@ namespace PUP_Inventory_Management_System
             }
         }
 
-        private void textBox_Username_KeyDown(object sender, KeyEventArgs e)
+        private void textBoxUsername_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Tab)
             {
@@ -164,7 +162,7 @@ namespace PUP_Inventory_Management_System
             }
         }
 
-        private void textBox_Password_KeyDown(object sender, KeyEventArgs e)
+        private void textBoxPassword_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
@@ -172,35 +170,35 @@ namespace PUP_Inventory_Management_System
             }
         }
 
-        private void textBox_EmployeeNumber_TextChanged(object sender, EventArgs e)
+        private void textBoxEmployeeNumber_TextChanged(object sender, EventArgs e)
         {
-            if (textBox_EmployeeNumber.Text == "")
+            if (textBoxEmployeeNumber.Text == "")
             {
-                label_employeenumber.Visible = false;
+                labelEmployeeNumber.Visible = false;
             }
-            else if (textBox_EmployeeNumber.Text.Length > 0)
+            else if (textBoxEmployeeNumber.Text.Length > 0)
             {
-                label_employeenumber.Visible = false;
+                labelEmployeeNumber.Visible = false;
             }
             else
             {
-                label_employeenumber.Visible = true;
+                labelEmployeeNumber.Visible = true;
             }
         }
 
-        private void textBox_Username_TextChanged(object sender, EventArgs e)
+        private void textBoxUsername_TextChanged(object sender, EventArgs e)
         {
-            if (textBox_Username.Text == "")
+            if (textBoxUsername.Text == "")
             {
-                label_username.Visible = false;
+                labelUsername.Visible = false;
             }
-            else if (textBox_Username.Text.Length > 0)
+            else if (textBoxUsername.Text.Length > 0)
             {
-                label_username.Visible = false;
+                labelUsername.Visible = false;
             }
             else
             {
-                label_username.Visible = true;
+                labelUsername.Visible = true;
             }
         }
     }
