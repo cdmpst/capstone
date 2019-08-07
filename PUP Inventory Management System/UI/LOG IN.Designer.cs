@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LOG_IN));
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox_Username = new System.Windows.Forms.TextBox();
-            this.textBox_Password = new System.Windows.Forms.TextBox();
+            this.textBoxUsername = new System.Windows.Forms.TextBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.label_username = new System.Windows.Forms.Label();
-            this.label_password = new System.Windows.Forms.Label();
-            this.button_Login = new System.Windows.Forms.Button();
+            this.labelUsername = new System.Windows.Forms.Label();
+            this.labelPassword = new System.Windows.Forms.Label();
+            this.buttonLogin = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label_employeenumber = new System.Windows.Forms.Label();
-            this.textBox_EmployeeNumber = new System.Windows.Forms.TextBox();
+            this.labelEmployeeNumber = new System.Windows.Forms.Label();
+            this.textBoxEmployeeNumber = new System.Windows.Forms.TextBox();
             this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -59,35 +59,35 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Inventory Management System";
             // 
-            // textBox_Username
+            // textBoxUsername
             // 
-            this.textBox_Username.AcceptsReturn = true;
-            this.textBox_Username.AcceptsTab = true;
-            this.textBox_Username.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_Username.Font = new System.Drawing.Font("Montserrat Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_Username.Location = new System.Drawing.Point(21, 133);
-            this.textBox_Username.Name = "textBox_Username";
-            this.textBox_Username.Size = new System.Drawing.Size(291, 23);
-            this.textBox_Username.TabIndex = 1;
-            this.textBox_Username.Click += new System.EventHandler(this.textBox_Username_Click);
-            this.textBox_Username.TextChanged += new System.EventHandler(this.textBox_Username_TextChanged);
-            this.textBox_Username.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_Username_KeyDown);
-            this.textBox_Username.Leave += new System.EventHandler(this.textBox_Username_Leave);
+            this.textBoxUsername.AcceptsReturn = true;
+            this.textBoxUsername.AcceptsTab = true;
+            this.textBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxUsername.Font = new System.Drawing.Font("Montserrat Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUsername.Location = new System.Drawing.Point(21, 133);
+            this.textBoxUsername.Name = "textBoxUsername";
+            this.textBoxUsername.Size = new System.Drawing.Size(291, 23);
+            this.textBoxUsername.TabIndex = 1;
+            this.textBoxUsername.Click += new System.EventHandler(this.textBoxUsername_Click);
+            this.textBoxUsername.TextChanged += new System.EventHandler(this.textBoxUsername_TextChanged);
+            this.textBoxUsername.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxUsername_KeyDown);
+            this.textBoxUsername.Leave += new System.EventHandler(this.textBoxUsername_Leave);
             // 
-            // textBox_Password
+            // textBoxPassword
             // 
-            this.textBox_Password.AcceptsReturn = true;
-            this.textBox_Password.AcceptsTab = true;
-            this.textBox_Password.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_Password.Font = new System.Drawing.Font("Montserrat Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_Password.Location = new System.Drawing.Point(21, 194);
-            this.textBox_Password.Name = "textBox_Password";
-            this.textBox_Password.Size = new System.Drawing.Size(291, 23);
-            this.textBox_Password.TabIndex = 2;
-            this.textBox_Password.Click += new System.EventHandler(this.textBox_Password_Click);
-            this.textBox_Password.TextChanged += new System.EventHandler(this.textBox_Password_TextChanged);
-            this.textBox_Password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_Password_KeyDown);
-            this.textBox_Password.Leave += new System.EventHandler(this.textBox_Password_Leave);
+            this.textBoxPassword.AcceptsReturn = true;
+            this.textBoxPassword.AcceptsTab = true;
+            this.textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPassword.Font = new System.Drawing.Font("Montserrat Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPassword.Location = new System.Drawing.Point(21, 194);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(291, 23);
+            this.textBoxPassword.TabIndex = 2;
+            this.textBoxPassword.Click += new System.EventHandler(this.textBoxPassword_Click);
+            this.textBoxPassword.TextChanged += new System.EventHandler(this.textBoxPassword_TextChanged);
+            this.textBoxPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxPassword_KeyDown);
+            this.textBoxPassword.Leave += new System.EventHandler(this.textBoxPassword_Leave);
             // 
             // lineShape2
             // 
@@ -107,88 +107,88 @@
             this.lineShape1.Y1 = 166;
             this.lineShape1.Y2 = 166;
             // 
-            // label_username
+            // labelUsername
             // 
-            this.label_username.AutoSize = true;
-            this.label_username.Enabled = false;
-            this.label_username.Font = new System.Drawing.Font("Montserrat Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_username.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label_username.Location = new System.Drawing.Point(21, 133);
-            this.label_username.Name = "label_username";
-            this.label_username.Size = new System.Drawing.Size(106, 23);
-            this.label_username.TabIndex = 5;
-            this.label_username.Text = "Username";
+            this.labelUsername.AutoSize = true;
+            this.labelUsername.Enabled = false;
+            this.labelUsername.Font = new System.Drawing.Font("Montserrat Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsername.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelUsername.Location = new System.Drawing.Point(21, 133);
+            this.labelUsername.Name = "labelUsername";
+            this.labelUsername.Size = new System.Drawing.Size(106, 23);
+            this.labelUsername.TabIndex = 5;
+            this.labelUsername.Text = "Username";
             // 
-            // label_password
+            // labelPassword
             // 
-            this.label_password.AutoSize = true;
-            this.label_password.Enabled = false;
-            this.label_password.Font = new System.Drawing.Font("Montserrat Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_password.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label_password.Location = new System.Drawing.Point(21, 194);
-            this.label_password.Name = "label_password";
-            this.label_password.Size = new System.Drawing.Size(100, 23);
-            this.label_password.TabIndex = 6;
-            this.label_password.Text = "Password";
+            this.labelPassword.AutoSize = true;
+            this.labelPassword.Enabled = false;
+            this.labelPassword.Font = new System.Drawing.Font("Montserrat Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPassword.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelPassword.Location = new System.Drawing.Point(21, 194);
+            this.labelPassword.Name = "labelPassword";
+            this.labelPassword.Size = new System.Drawing.Size(100, 23);
+            this.labelPassword.TabIndex = 6;
+            this.labelPassword.Text = "Password";
             // 
-            // button_Login
+            // buttonLogin
             // 
-            this.button_Login.BackColor = System.Drawing.Color.Maroon;
-            this.button_Login.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_Login.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.button_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Login.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Login.ForeColor = System.Drawing.Color.White;
-            this.button_Login.Location = new System.Drawing.Point(95, 253);
-            this.button_Login.Name = "button_Login";
-            this.button_Login.Size = new System.Drawing.Size(132, 38);
-            this.button_Login.TabIndex = 3;
-            this.button_Login.Text = "Sign In";
-            this.button_Login.UseVisualStyleBackColor = false;
-            this.button_Login.Click += new System.EventHandler(this.button_Login_Click);
+            this.buttonLogin.BackColor = System.Drawing.Color.Maroon;
+            this.buttonLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonLogin.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLogin.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogin.ForeColor = System.Drawing.Color.White;
+            this.buttonLogin.Location = new System.Drawing.Point(95, 253);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(132, 38);
+            this.buttonLogin.TabIndex = 3;
+            this.buttonLogin.Text = "Sign In";
+            this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label_employeenumber);
-            this.panel1.Controls.Add(this.textBox_EmployeeNumber);
+            this.panel1.Controls.Add(this.labelEmployeeNumber);
+            this.panel1.Controls.Add(this.textBoxEmployeeNumber);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label_password);
-            this.panel1.Controls.Add(this.label_username);
-            this.panel1.Controls.Add(this.button_Login);
-            this.panel1.Controls.Add(this.textBox_Password);
-            this.panel1.Controls.Add(this.textBox_Username);
+            this.panel1.Controls.Add(this.labelPassword);
+            this.panel1.Controls.Add(this.labelUsername);
+            this.panel1.Controls.Add(this.buttonLogin);
+            this.panel1.Controls.Add(this.textBoxPassword);
+            this.panel1.Controls.Add(this.textBoxUsername);
             this.panel1.Controls.Add(this.shapeContainer2);
             this.panel1.Location = new System.Drawing.Point(466, 167);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(332, 324);
             this.panel1.TabIndex = 9;
             // 
-            // label_employeenumber
+            // labelEmployeeNumber
             // 
-            this.label_employeenumber.AutoSize = true;
-            this.label_employeenumber.Enabled = false;
-            this.label_employeenumber.Font = new System.Drawing.Font("Montserrat Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_employeenumber.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label_employeenumber.Location = new System.Drawing.Point(21, 78);
-            this.label_employeenumber.Name = "label_employeenumber";
-            this.label_employeenumber.Size = new System.Drawing.Size(187, 23);
-            this.label_employeenumber.TabIndex = 11;
-            this.label_employeenumber.Text = "Employee Number";
+            this.labelEmployeeNumber.AutoSize = true;
+            this.labelEmployeeNumber.Enabled = false;
+            this.labelEmployeeNumber.Font = new System.Drawing.Font("Montserrat Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmployeeNumber.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelEmployeeNumber.Location = new System.Drawing.Point(21, 78);
+            this.labelEmployeeNumber.Name = "labelEmployeeNumber";
+            this.labelEmployeeNumber.Size = new System.Drawing.Size(187, 23);
+            this.labelEmployeeNumber.TabIndex = 11;
+            this.labelEmployeeNumber.Text = "Employee Number";
             // 
-            // textBox_EmployeeNumber
+            // textBoxEmployeeNumber
             // 
-            this.textBox_EmployeeNumber.AcceptsReturn = true;
-            this.textBox_EmployeeNumber.AcceptsTab = true;
-            this.textBox_EmployeeNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_EmployeeNumber.Font = new System.Drawing.Font("Montserrat Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_EmployeeNumber.Location = new System.Drawing.Point(21, 78);
-            this.textBox_EmployeeNumber.Name = "textBox_EmployeeNumber";
-            this.textBox_EmployeeNumber.Size = new System.Drawing.Size(291, 23);
-            this.textBox_EmployeeNumber.TabIndex = 0;
-            this.textBox_EmployeeNumber.Click += new System.EventHandler(this.textBox_EmployeeNumber_Click);
-            this.textBox_EmployeeNumber.TextChanged += new System.EventHandler(this.textBox_EmployeeNumber_TextChanged);
-            this.textBox_EmployeeNumber.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_EmployeeNumber_KeyDown);
-            this.textBox_EmployeeNumber.Leave += new System.EventHandler(this.textBox_EmployeeNumber_Leave);
+            this.textBoxEmployeeNumber.AcceptsReturn = true;
+            this.textBoxEmployeeNumber.AcceptsTab = true;
+            this.textBoxEmployeeNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxEmployeeNumber.Font = new System.Drawing.Font("Montserrat Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxEmployeeNumber.Location = new System.Drawing.Point(21, 78);
+            this.textBoxEmployeeNumber.Name = "textBoxEmployeeNumber";
+            this.textBoxEmployeeNumber.Size = new System.Drawing.Size(291, 23);
+            this.textBoxEmployeeNumber.TabIndex = 0;
+            this.textBoxEmployeeNumber.Click += new System.EventHandler(this.textBox_EmployeeNumber_Click);
+            this.textBoxEmployeeNumber.TextChanged += new System.EventHandler(this.textBoxEmployeeNumber_TextChanged);
+            this.textBoxEmployeeNumber.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxEmployeeNumber_KeyDown);
+            this.textBoxEmployeeNumber.Leave += new System.EventHandler(this.textBoxEmployeeNumber_Leave);
             // 
             // shapeContainer2
             // 
@@ -257,19 +257,19 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox_Username;
-        private System.Windows.Forms.TextBox textBox_Password;
+        private System.Windows.Forms.TextBox textBoxUsername;
+        private System.Windows.Forms.TextBox textBoxPassword;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
-        private System.Windows.Forms.Label label_username;
-        private System.Windows.Forms.Label label_password;
-        private System.Windows.Forms.Button button_Login;
+        private System.Windows.Forms.Label labelUsername;
+        private System.Windows.Forms.Label labelPassword;
+        private System.Windows.Forms.Button buttonLogin;
         private System.Windows.Forms.Panel panel1;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label_employeenumber;
-        private System.Windows.Forms.TextBox textBox_EmployeeNumber;
+        private System.Windows.Forms.Label labelEmployeeNumber;
+        private System.Windows.Forms.TextBox textBoxEmployeeNumber;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape3;
     }
 }

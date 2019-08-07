@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_StockMonitoring));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button_Supplies = new System.Windows.Forms.Button();
             this.button_Equipment = new System.Windows.Forms.Button();
-            this.panel_Equipment = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button_edit = new System.Windows.Forms.Button();
+            this.panelEquipment = new System.Windows.Forms.Panel();
+            this.buttonAdd = new System.Windows.Forms.Button();
+            this.buttonSave = new System.Windows.Forms.Button();
+            this.buttonClear = new System.Windows.Forms.Button();
+            this.buttonEdit = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox_PersonAccountable = new System.Windows.Forms.TextBox();
@@ -87,12 +87,12 @@
             this.rectangleShape9 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.rectangleShape13 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.panel_Supplies = new System.Windows.Forms.Panel();
+            this.panelSupplies = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panel_Equipment.SuspendLayout();
+            this.panelEquipment.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Properties)).BeginInit();
-            this.panel_Supplies.SuspendLayout();
+            this.panelSupplies.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -137,113 +137,115 @@
             this.button_Equipment.UseVisualStyleBackColor = false;
             this.button_Equipment.Click += new System.EventHandler(this.button_Equipment_Click);
             // 
-            // panel_Equipment
+            // panelEquipment
             // 
-            this.panel_Equipment.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel_Equipment.Controls.Add(this.button4);
-            this.panel_Equipment.Controls.Add(this.button3);
-            this.panel_Equipment.Controls.Add(this.button1);
-            this.panel_Equipment.Controls.Add(this.button_edit);
-            this.panel_Equipment.Controls.Add(this.textBox1);
-            this.panel_Equipment.Controls.Add(this.label11);
-            this.panel_Equipment.Controls.Add(this.textBox_PersonAccountable);
-            this.panel_Equipment.Controls.Add(this.label10);
-            this.panel_Equipment.Controls.Add(this.dateTimePicker_DateAcquired);
-            this.panel_Equipment.Controls.Add(this.textBox_DateAcquired);
-            this.panel_Equipment.Controls.Add(this.button_calendarDateAcquired);
-            this.panel_Equipment.Controls.Add(this.label9);
-            this.panel_Equipment.Controls.Add(this.textBox_Quantity);
-            this.panel_Equipment.Controls.Add(this.textBox_Cost);
-            this.panel_Equipment.Controls.Add(this.label8);
-            this.panel_Equipment.Controls.Add(this.label7);
-            this.panel_Equipment.Controls.Add(this.textBox_Brand);
-            this.panel_Equipment.Controls.Add(this.label6);
-            this.panel_Equipment.Controls.Add(this.textBox_Description);
-            this.panel_Equipment.Controls.Add(this.label5);
-            this.panel_Equipment.Controls.Add(this.textBox_SerialNumber);
-            this.panel_Equipment.Controls.Add(this.label4);
-            this.panel_Equipment.Controls.Add(this.label3);
-            this.panel_Equipment.Controls.Add(this.label1);
-            this.panel_Equipment.Controls.Add(this.textBox_PropertyNumber);
-            this.panel_Equipment.Controls.Add(this.button2);
-            this.panel_Equipment.Controls.Add(this.comboBox_searchFilter);
-            this.panel_Equipment.Controls.Add(this.button_search);
-            this.panel_Equipment.Controls.Add(this.tb_Search);
-            this.panel_Equipment.Controls.Add(this.dataGridView_Properties);
-            this.panel_Equipment.Controls.Add(this.shapeContainer1);
-            this.panel_Equipment.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_Equipment.Location = new System.Drawing.Point(0, 59);
-            this.panel_Equipment.Name = "panel_Equipment";
-            this.panel_Equipment.Size = new System.Drawing.Size(1159, 729);
-            this.panel_Equipment.TabIndex = 1;
+            this.panelEquipment.BackColor = System.Drawing.Color.Gainsboro;
+            this.panelEquipment.Controls.Add(this.buttonEdit);
+            this.panelEquipment.Controls.Add(this.buttonClear);
+            this.panelEquipment.Controls.Add(this.buttonAdd);
+            this.panelEquipment.Controls.Add(this.buttonSave);
+            this.panelEquipment.Controls.Add(this.textBox1);
+            this.panelEquipment.Controls.Add(this.label11);
+            this.panelEquipment.Controls.Add(this.textBox_PersonAccountable);
+            this.panelEquipment.Controls.Add(this.label10);
+            this.panelEquipment.Controls.Add(this.dateTimePicker_DateAcquired);
+            this.panelEquipment.Controls.Add(this.textBox_DateAcquired);
+            this.panelEquipment.Controls.Add(this.button_calendarDateAcquired);
+            this.panelEquipment.Controls.Add(this.label9);
+            this.panelEquipment.Controls.Add(this.textBox_Quantity);
+            this.panelEquipment.Controls.Add(this.textBox_Cost);
+            this.panelEquipment.Controls.Add(this.label8);
+            this.panelEquipment.Controls.Add(this.label7);
+            this.panelEquipment.Controls.Add(this.textBox_Brand);
+            this.panelEquipment.Controls.Add(this.label6);
+            this.panelEquipment.Controls.Add(this.textBox_Description);
+            this.panelEquipment.Controls.Add(this.label5);
+            this.panelEquipment.Controls.Add(this.textBox_SerialNumber);
+            this.panelEquipment.Controls.Add(this.label4);
+            this.panelEquipment.Controls.Add(this.label3);
+            this.panelEquipment.Controls.Add(this.label1);
+            this.panelEquipment.Controls.Add(this.textBox_PropertyNumber);
+            this.panelEquipment.Controls.Add(this.button2);
+            this.panelEquipment.Controls.Add(this.comboBox_searchFilter);
+            this.panelEquipment.Controls.Add(this.button_search);
+            this.panelEquipment.Controls.Add(this.tb_Search);
+            this.panelEquipment.Controls.Add(this.dataGridView_Properties);
+            this.panelEquipment.Controls.Add(this.shapeContainer1);
+            this.panelEquipment.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelEquipment.Location = new System.Drawing.Point(0, 59);
+            this.panelEquipment.Name = "panelEquipment";
+            this.panelEquipment.Size = new System.Drawing.Size(1159, 729);
+            this.panelEquipment.TabIndex = 1;
             // 
-            // button4
+            // buttonAdd
             // 
-            this.button4.BackColor = System.Drawing.Color.Maroon;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(1027, 611);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 50);
-            this.button4.TabIndex = 83;
-            this.button4.Text = "Add Item";
-            this.button4.UseVisualStyleBackColor = false;
+            this.buttonAdd.BackColor = System.Drawing.Color.Maroon;
+            this.buttonAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonAdd.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.buttonAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.buttonAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAdd.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAdd.ForeColor = System.Drawing.Color.White;
+            this.buttonAdd.Location = new System.Drawing.Point(1027, 611);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(75, 50);
+            this.buttonAdd.TabIndex = 83;
+            this.buttonAdd.Text = "Add Item";
+            this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button3
+            // buttonSave
             // 
-            this.button3.BackColor = System.Drawing.Color.Maroon;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(1027, 561);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 35);
-            this.button3.TabIndex = 82;
-            this.button3.Text = "Save";
-            this.button3.UseVisualStyleBackColor = false;
+            this.buttonSave.BackColor = System.Drawing.Color.Maroon;
+            this.buttonSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSave.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.buttonSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.buttonSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSave.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSave.ForeColor = System.Drawing.Color.White;
+            this.buttonSave.Location = new System.Drawing.Point(1027, 561);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(75, 35);
+            this.buttonSave.TabIndex = 82;
+            this.buttonSave.Text = "Save";
+            this.buttonSave.UseVisualStyleBackColor = false;
+            this.buttonSave.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button1
+            // buttonClear
             // 
-            this.button1.BackColor = System.Drawing.Color.Maroon;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1027, 510);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 35);
-            this.button1.TabIndex = 81;
-            this.button1.Text = "Clear";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonClear.BackColor = System.Drawing.Color.Maroon;
+            this.buttonClear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonClear.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.buttonClear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.buttonClear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.buttonClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClear.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonClear.ForeColor = System.Drawing.Color.White;
+            this.buttonClear.Location = new System.Drawing.Point(1027, 510);
+            this.buttonClear.Name = "buttonClear";
+            this.buttonClear.Size = new System.Drawing.Size(75, 35);
+            this.buttonClear.TabIndex = 81;
+            this.buttonClear.Text = "Clear";
+            this.buttonClear.UseVisualStyleBackColor = false;
             // 
-            // button_edit
+            // buttonEdit
             // 
-            this.button_edit.BackColor = System.Drawing.Color.Maroon;
-            this.button_edit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_edit.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.button_edit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.button_edit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.button_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_edit.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_edit.ForeColor = System.Drawing.Color.White;
-            this.button_edit.Location = new System.Drawing.Point(1027, 462);
-            this.button_edit.Name = "button_edit";
-            this.button_edit.Size = new System.Drawing.Size(75, 35);
-            this.button_edit.TabIndex = 80;
-            this.button_edit.Text = "Edit";
-            this.button_edit.UseVisualStyleBackColor = false;
+            this.buttonEdit.BackColor = System.Drawing.Color.Maroon;
+            this.buttonEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonEdit.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.buttonEdit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.buttonEdit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEdit.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEdit.ForeColor = System.Drawing.Color.White;
+            this.buttonEdit.Location = new System.Drawing.Point(1027, 462);
+            this.buttonEdit.Name = "buttonEdit";
+            this.buttonEdit.Size = new System.Drawing.Size(75, 35);
+            this.buttonEdit.TabIndex = 80;
+            this.buttonEdit.Text = "Edit";
+            this.buttonEdit.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
@@ -571,14 +573,14 @@
             this.dataGridView_Properties.AllowUserToResizeRows = false;
             this.dataGridView_Properties.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_Properties.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Gilroy-ExtraBold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Properties.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Gilroy-ExtraBold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Properties.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView_Properties.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Properties.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -823,14 +825,14 @@
             this.rectangleShape1.SelectionColor = System.Drawing.Color.Transparent;
             this.rectangleShape1.Size = new System.Drawing.Size(1075, 38);
             // 
-            // panel_Supplies
+            // panelSupplies
             // 
-            this.panel_Supplies.Controls.Add(this.label2);
-            this.panel_Supplies.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_Supplies.Location = new System.Drawing.Point(0, 0);
-            this.panel_Supplies.Name = "panel_Supplies";
-            this.panel_Supplies.Size = new System.Drawing.Size(1159, 788);
-            this.panel_Supplies.TabIndex = 1;
+            this.panelSupplies.Controls.Add(this.label2);
+            this.panelSupplies.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelSupplies.Location = new System.Drawing.Point(0, 59);
+            this.panelSupplies.Name = "panelSupplies";
+            this.panelSupplies.Size = new System.Drawing.Size(1159, 729);
+            this.panelSupplies.TabIndex = 1;
             // 
             // label2
             // 
@@ -845,17 +847,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel_Equipment);
+            this.Controls.Add(this.panelSupplies);
+            this.Controls.Add(this.panelEquipment);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel_Supplies);
             this.Name = "UC_StockMonitoring";
             this.Size = new System.Drawing.Size(1159, 788);
             this.panel1.ResumeLayout(false);
-            this.panel_Equipment.ResumeLayout(false);
-            this.panel_Equipment.PerformLayout();
+            this.panelEquipment.ResumeLayout(false);
+            this.panelEquipment.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Properties)).EndInit();
-            this.panel_Supplies.ResumeLayout(false);
-            this.panel_Supplies.PerformLayout();
+            this.panelSupplies.ResumeLayout(false);
+            this.panelSupplies.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -864,8 +866,8 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button_Equipment;
-        private System.Windows.Forms.Panel panel_Equipment;
-        private System.Windows.Forms.Panel panel_Supplies;
+        private System.Windows.Forms.Panel panelEquipment;
+        private System.Windows.Forms.Panel panelSupplies;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button_Supplies;
         private System.Windows.Forms.TextBox textBox_PropertyNumber;
@@ -917,9 +919,9 @@
         private System.Windows.Forms.Label label11;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape10;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button_edit;
+        private System.Windows.Forms.Button buttonAdd;
+        private System.Windows.Forms.Button buttonSave;
+        private System.Windows.Forms.Button buttonClear;
+        private System.Windows.Forms.Button buttonEdit;
     }
 }
